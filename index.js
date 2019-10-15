@@ -45,7 +45,10 @@ client.on('message', message => {
   if(message.content.includes(`za ty dnešní boule`)){
     message.channel.send("ukousnu ti obě koule")
   }
-
+    
+  if(message.content.startsWith(`${prefix}pochutnanicko`)){
+    message.channel.send(`https://nhentai.net/g/220958/`)
+  }
 
 
 })
