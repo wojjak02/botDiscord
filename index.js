@@ -47,8 +47,8 @@ client.on('message', message => {
   }
     
 //nhentai
-$cislo1 = Math.floor(Math.random() * (+1 - +3)) + +1; 
-$cislo2 = Math.floor(Math.random() * (+1 - +7)) + +1; 
+$cislo1 = Math.floor(Math.random() * (+3 - +1)) + +1; 
+$cislo2 = Math.floor(Math.random() * (+7 - +1)) + +1; 
 $cislo3 = (Math.round(Math.random() * 10));
 $cislo4 = (Math.round(Math.random() * 10));
 $cislo5 = (Math.round(Math.random() * 10));
