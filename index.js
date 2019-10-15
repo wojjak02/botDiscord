@@ -47,14 +47,14 @@ client.on('message', message => {
   }
     
 //nhentai
-$cislo1 = (Math.round(Math.random() * 10));
-$cislo2 = (Math.round(Math.random() * 10));
+$cislo1 = Math.floor(Math.random() * (+1 - +3)) + +1; 
+$cislo2 = Math.floor(Math.random() * (+1 - +7)) + +1; 
 $cislo3 = (Math.round(Math.random() * 10));
 $cislo4 = (Math.round(Math.random() * 10));
 $cislo5 = (Math.round(Math.random() * 10));
 $cislo6 = (Math.round(Math.random() * 10));
 
-  if(message.content.startsWith(`${prefix}nh`)){
+  if(message.content.startsWith(`${prefix}pochutnanicko`)){
     message.channel.send(`https://nhentai.net/g/`+$cislo1+$cislo2+$cislo3+$cislo4+$cislo5+$cislo6+`/`)
   }
 
