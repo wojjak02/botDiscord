@@ -46,8 +46,16 @@ client.on('message', message => {
     message.channel.send("ukousnu ti obě koule")
   }
     
+//nhentai
+$cislo1 = (Math.round(Math.random() * 10));
+$cislo2 = (Math.round(Math.random() * 10));
+$cislo3 = (Math.round(Math.random() * 10));
+$cislo4 = (Math.round(Math.random() * 10));
+$cislo5 = (Math.round(Math.random() * 10));
+$cislo6 = (Math.round(Math.random() * 10));
+
   if(message.content.startsWith(`${prefix}pochutnanicko`)){
-    message.channel.send(`https://nhentai.net/g/220958/`)
+    message.channel.send(`https://nhentai.net/g/`+$cislo1+$cislo2+$cislo3+$cislo4+$cislo5+$cislo6+`/`)
   }
 
 
