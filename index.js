@@ -57,6 +57,11 @@ $cislo6 = (Math.round(Math.random() * 10));
   if(message.content.startsWith(`${prefix}cum`)){
     message.channel.send(`https://nhentai.net/g/`+$cislo1+$cislo2+$cislo3+$cislo4+$cislo5+$cislo6+`/`)
   }
+    
+ $cislak = Math.floor(Math.random() * (+275000 - +120000)) + +120000; 
+    if(message.content.startsWith(`${prefix}cum2`)){
+    message.channel.send(`https://nhentai.net/g/`+$cislak+`/`)
+  }
 
 
 })
