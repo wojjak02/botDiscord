@@ -54,7 +54,7 @@ $cislo4 = (Math.round(Math.random() * 10));
 $cislo5 = (Math.round(Math.random() * 10));
 $cislo6 = (Math.round(Math.random() * 10));
 
-  if(message.content.startsWith(`${prefix}cum`)){
+  if(message.content.startsWith(`${prefix}cum1`)){
     message.channel.send(`https://nhentai.net/g/`+$cislo1+$cislo2+$cislo3+$cislo4+$cislo5+$cislo6+`/`)
   }
     
