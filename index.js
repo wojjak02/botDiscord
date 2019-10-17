@@ -87,7 +87,7 @@ client.on('message', message => {
         message.channel.send("nemas PRAVA debilku")
   }
   }
-  if(message.content.startsWith(`What's this?`)){
+  if(message.content.startsWith(`What's This?`)){
 message.channel.send(`owo`)
 }
   
