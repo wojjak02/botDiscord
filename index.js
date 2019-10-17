@@ -35,9 +35,7 @@ client.on('message', message => {
   }
   }
   //easter eggy
-  if(message.content.startsWith(`${prefix2}owo`)){
-    message.channel.send("pakuj do pice")
-  }
+
 
   if(message.content.includes(`What's This?`)){
     var embed = new Discord.RichEmbed()
