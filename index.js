@@ -58,7 +58,7 @@ client.once('ready', () =>{
 })
 
 client.on('message', message => {
-  
+  if(message.author.bot) return;  //If user is bot return
     connection.query('SELECT * FROM `nhentai` ',
     async function(error,result,bruhmoment){
       if(error)throw error;
@@ -109,7 +109,7 @@ client.on('message', message => {
         message.channel.send("nemas PRAVA debilku")
   }
   }
-
+  
   if(message.content.includes(`What's This?`)){
     var embed = new Discord.RichEmbed()
     .setTitle('mrdka')
