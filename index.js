@@ -87,7 +87,11 @@ client.on('message', message => {
         message.channel.send("nemas PRAVA debilku")
   }
   }
-
+  if(message.content.startsWith(`What's this?`)){
+message.channel.send(`owo`)
+}
+  
+  
   if(message.content.includes(`What's This?`)){
     var embed = new Discord.RichEmbed()
     .setTitle('mrdka')
@@ -104,9 +108,7 @@ if(message.content.startsWith(`${prefix}cum2`)){
 message.channel.send(`https://nhentai.net/g/`+$cislak+`/`)
 }
 
-if(message.content.startsWith(`What's this`)){
-message.channel.send(`owo`)
-}
+
 
 var embed = new Discord.RichEmbed()
 .setTitle('mrdka')
