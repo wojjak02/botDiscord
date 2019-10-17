@@ -4,6 +4,7 @@ const client = new Discord.Client();
 const nhentai = require('nhentai-js');
 const async = require('async');
 const db = require('./database.js');
+const mysql = require('mysql');
 
 
 function handleDisconnect() {
