@@ -93,7 +93,6 @@ client.on('message', message => {
     message.channel.send(embed);
   }
 
-
   if(message.content.includes(`za ty dnešní boulde`)){
     message.channel.send("ukousnu ti obě koule")
   }
