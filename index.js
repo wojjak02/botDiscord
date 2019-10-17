@@ -40,7 +40,9 @@ client.on('message', message => {
   }
 
   if(message.content.includes(`What's This?`)){
-    message.channel.send("na tebe nikdo nemluvi")
+    var embed = new Discord.RichEmbed()
+    .setTitle('mrdka')
+    message.channel.send(embed);
   }
   if(message.content.includes(`za ty dnešní boule`)){
     message.channel.send("ukousnu ti obě koule")
