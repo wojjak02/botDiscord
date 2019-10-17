@@ -7,6 +7,10 @@ const db = require('./database.js');
 const mysql = require('mysql');
 
 
+var nhc;
+
+
+
 function handleDisconnect() {
   var login = {
       host     : 'remotemysql.com',
@@ -54,8 +58,10 @@ client.once('ready', () =>{
 })
 
 client.on('message', message => {
+  
     connection.query('SELECT * FROM `nhentai` ',
     async function(error,result,bruhmoment){
+      if(error)throw error;
       if(result[0]==undefined){
         let hp = await nhentai.getHomepage(1);
         let id = hp.results[0].bookId;
@@ -65,6 +71,22 @@ client.on('message', message => {
         Date : new Date()
         }
         db.insert(connection, set, 'nhentai')
+        nhc = await parseInt (id);
+      }
+      else if(result[0].date.getDay()!=new Date().getDay()){
+        let hp = await nhentai.getHomepage(1);
+        let id = hp.results[0].bookId;
+        
+
+        let set = {newest : id,
+        Date : new Date()
+        }
+        let sql = "UPDATE `nhentai` SET ? "
+        connection.query( sql, set )
+        nhc = await parseInt (id);
+      }
+      else{
+        nhc = await parseInt (result[0].newest);
       }
     })
 
@@ -98,16 +120,16 @@ client.on('message', message => {
     message.channel.send("ukousnu ti obě koule")
   }
 //nhentai
-$cislak = Math.floor(Math.random() * (+275000 - +1)) + +1; 
+var cislak = Math.floor(Math.random() * (nhc - 1))  +1; 
     
-if(message.content.startsWith(`${prefix}cum2`)){
-message.channel.send(`https://nhentai.net/g/`+$cislak+`/`)
+if(message.content.startsWith(`${prefix}cum`)){ 
+message.channel.send(`https://nhentai.net/g/`+cislak+`/`)
 }
 
 
+//embed pičo
 var embed = new Discord.RichEmbed()
 .setTitle('mrdka')
-
 })
 
   
