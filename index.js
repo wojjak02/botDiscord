@@ -133,7 +133,7 @@ message.channel.send(`https://nhentai.net/g/`+nhc+`/`)
 
 //embed pičo
 var embed = new Discord.RichEmbed()
-.setTitle('mrdka', 'pakuj do pice')
+.setTitle('mrdka', 'pakuj do pice', true)
 })
 
   
