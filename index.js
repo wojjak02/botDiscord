@@ -125,6 +125,10 @@ var cislak = Math.floor(Math.random() * (nhc - 1))  +1;
 if(message.content.startsWith(`${prefix}cum`)){ 
 message.channel.send(`https://nhentai.net/g/`+cislak+`/`)
 }
+  
+if(message.content.startsWith(`${prefix}newest`)){ 
+message.channel.send(`https://nhentai.net/g/`+nhc+`/`)
+}
 
 
 //embed pičo
