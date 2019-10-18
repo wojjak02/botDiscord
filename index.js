@@ -110,7 +110,7 @@ client.on('message', message => {
   }
   }
   
-  if(message.content.includes(`What's This?`)){
+  if(message.content.includes(`owo`)){
     var embed = new Discord.RichEmbed()
     .setTitle('mrdka')
     message.channel.send(embed);
