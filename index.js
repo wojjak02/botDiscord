@@ -86,7 +86,7 @@ client.on('message', message => {
         nhc = await parseInt (id);
       }
       else{
-        nhc = await parseInt (result[0].newest)+1;
+        nhc = await parseInt (result[0].newest);
       }
     })
 
