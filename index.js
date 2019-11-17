@@ -123,7 +123,7 @@ client.on('message', message => {
 var cislak = Math.floor(Math.random() * (nhc - 1))  +1; 
     
 if(message.content.startsWith(`${prefix}cum`)){ 
-message.channel.send(`https://nhentai.net/g/`+cislak+1+`/`)
+message.channel.send(`https://nhentai.net/g/`+cislak+`/`)
 }
   
 if(message.content.startsWith(`${prefix}newest`)){ 
