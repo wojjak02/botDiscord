@@ -79,7 +79,7 @@ client.on('message', message => {
         
 
         let set = {newest : id,
-        Date : new Date() +1
+        Date : new Date() 
         }
         let sql = "UPDATE `nhentai` SET ? "
         connection.query( sql, set )
@@ -123,7 +123,7 @@ client.on('message', message => {
 var cislak = Math.floor(Math.random() * (nhc - 1))  +1; 
     
 if(message.content.startsWith(`${prefix}cum`)){ 
-message.channel.send(`https://nhentai.net/g/`+cislak+`/`)
+message.channel.send(`https://nhentai.net/g/`+cislak+1+`/`)
 }
   
 if(message.content.startsWith(`${prefix}newest`)){ 
