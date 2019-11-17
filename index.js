@@ -79,7 +79,7 @@ client.on('message', message => {
         
 
         let set = {newest : id,
-        Date : new Date()
+        Date : new Date() +1
         }
         let sql = "UPDATE `nhentai` SET ? "
         connection.query( sql, set )
