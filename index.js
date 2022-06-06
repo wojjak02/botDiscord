@@ -99,14 +99,14 @@ client.on('message', message => {
     //console.log(message.content); = vypis veci z chatu do terminalu
 
     if(message.member.hasPermission(['KICK_MEMBERS', 'BAN_MEMBERS'])){
-        //message.channel.send("konecne cas mrdani s ")
+        //message.channel.send("konecne cas na povidani s ")
 
         let member = message.mentions.members.first();
         member.kick().then((member)=> {
-            message.channel.send("bruh " + member.displayName + " picak")
+            message.channel.send("bruh " + member.displayName + " opicak")
         })
     }else{
-        message.channel.send("nemas PRAVA debilku")
+        message.channel.send("nemas PRAVA ")
   }
   }
   
@@ -117,7 +117,7 @@ client.on('message', message => {
   }
 
   if(message.content.includes(`za ty dnešní boulde`)){
-    message.channel.send("ukousnu ti obě koule")
+    message.channel.send("ukousnu ti obě ocka")
   }
 //nhentai
 var cislak = Math.floor(Math.random() * (nhc - 1))  +1; 
